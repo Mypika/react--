@@ -1,0 +1,11 @@
+.layout{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.header>span{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 10px;
+}

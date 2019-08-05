@@ -67,11 +67,10 @@ class Home extends Component {
             }}>
            {Mrouter.map((Item)=>{
               return Item.child?Item.children.map((Itemchi)=>{
-                if(Item.child){
+                if(Itemchi.child){
                   return false 
                 }else{
-                  console.log(1)
-                return  <Route key={Itemchi.id} exact path={'/home'+Itemchi.paths} component={Itemchi.commpoent}/>
+                return <Route key={Itemchi.id} exact path={'/home'+Itemchi.paths} component={Itemchi.commpoent}/>
                 }
               }):
               <Route key={Item.id} exact path={'/home'+Item.paths} component={Item.commpoent}/>

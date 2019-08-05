@@ -7,11 +7,12 @@ class Indexs extends Component {
         this.state = {}
     }
     componentWillMount() {
-        const user = localStorage.getItem('username')
+        const user = sessionStorage.getItem('username')
+        console.log(user)
         if(user===null){
-            this.props.history.push('login')
+            this.props.history.push('/login')
         }else{
-            this.props.history.push('home')
+            this.props.history.push('/home')
         }
     }
     render() { 

@@ -16,8 +16,8 @@ class App extends Component {
         <BrowserRouter>
           <Route path="/" component={Index}></Route>
           <Route path="/login" exact component={Login}></Route>
-          <Route path="/home" exact component={Home}></Route>
-          <Route  exact component={Errpage}></Route>
+          <Route path="/home" component={Home}></Route>
+          <Route path="/404" exact component={Errpage}></Route>
         </BrowserRouter>
     );
   }

@@ -16,7 +16,7 @@ class Login extends Component {
         this.setState({
             iconLoading:true
         })
-        sessionStorage.setItem('user',this.state.users)
+        sessionStorage.setItem('username',this.state.users)
         this.props.history.push('/home')
     }
     render() { 

@@ -3,10 +3,37 @@ const Mroute = [
         name:'首页',
         paths:'',
         child:false,
+    },
+    {
+        name:'书籍管理',
+        paths:'/ify',
+        child:false,
+    },
+    {
+        name:'本地上传',
+        paths:'/loac',
+        child:false,
+    },
+    {
+        name:'网络抓取',
+        paths:'/inder',
+        child:false,
+    },
+    {
+        name:'追书神器接口',
+        paths:'/GGbook',
+        child:false,
         children:[
             {
-                name:''
+                name:'全部分类',
+                paths:'/GGbook/ify',
+                child:true,
+            },
+            {
+                name:'人气最高',
+                paths:'/GGbook/poel',
+                child:true,
             }
         ]
-    }
+    },
 ]

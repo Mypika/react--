@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
-import {BrowserRouter,Route} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import './Home.css'
 //子页面
 import Page1 from '../HomePage/page1';
@@ -31,7 +31,6 @@ class Home extends Component {
   }
   render() { 
     return (
-      <BrowserRouter>
       <Layout className="layout">
       <Header className="header">
           <span>欢迎你！{this.state.users}</span>
@@ -82,11 +81,10 @@ class Home extends Component {
               margin: 0,
               minHeight: 280,
             }}>
-            <Route path="/index" component={this.state.exart}/>
+            <Route path="/home" component={this.state.exart}/>
           </Content>
         </Layout>
       </Layout>
     </Layout>
-  </BrowserRouter>
     )}}
 export default Home;

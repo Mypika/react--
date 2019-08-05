@@ -6,7 +6,6 @@ class Indexs extends Component {
         super(props);
         this.state = {}
     }
-    
     componentWillMount() {
         const user = localStorage.getItem('username')
         if(user===null){
@@ -15,7 +14,6 @@ class Indexs extends Component {
             this.props.history.push('home')
         }
     }
-    
     render() { 
         return ( 
             <BrowserRouter>

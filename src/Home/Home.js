@@ -70,7 +70,8 @@ class Home extends Component {
                 if(Item.child){
                   return false 
                 }else{
-                  return  <Route key={Itemchi.id} exact path={'/home'+Itemchi.paths} component={Itemchi.commpoent}/>
+                  console.log(1)
+                return  <Route key={Itemchi.id} exact path={'/home'+Itemchi.paths} component={Itemchi.commpoent}/>
                 }
               }):
               <Route key={Item.id} exact path={'/home'+Item.paths} component={Item.commpoent}/>

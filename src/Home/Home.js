@@ -4,7 +4,7 @@ import {BrowserRouter,Route} from 'react-router-dom'
 import './Home.css'
 //子页面
 import Page1 from '../HomePage/page1';
-import Gbook1 from '../Ggbok/gbook1'
+
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 class Home extends Component {
@@ -27,7 +27,6 @@ class Home extends Component {
   }
   Gook1=()=>{
     console.log(1)
-    this.setState({exart:Gbook1})
   //  this.props.history.push('./gbook1')
   }
   render() { 

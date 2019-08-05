@@ -14,10 +14,9 @@ class App extends Component {
   render() { 
     return (
         <BrowserRouter>
-          <Route path="/" exact component={Index}></Route>
-          <Route path="/login" component={Login}></Route>
-          <Route path="/home" component={Home}></Route>
-          <Route component={Errpage}></Route>
+          <Route path="/" component={Index}></Route>
+          <Route path="/login" exact component={Login}></Route>
+          <Route path="/home" exact component={Home}></Route>
         </BrowserRouter>
     );
   }

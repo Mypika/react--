@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
-import {Switch,Redirect} from 'react-router-dom'
+import {BrowserRouter,Route} from 'react-router-dom'
 
 class Indexs extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
     }
+    
+    componentWillMount() {
+        const user = localStorage.getItem('username')
+        if(user===null){
+            this.props.history.push('login')
+        }else{
+            this.props.history.push('home')
+        }
+    }
+    
     render() { 
         return ( 
-            <Switch>
-                {console.log()}
-                {/* <Redirect to='/home'/> */}
-            </Switch>
+            <BrowserRouter>
+               <Route></Route>
+            </BrowserRouter>
         );
     }
 }

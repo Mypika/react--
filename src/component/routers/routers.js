@@ -1,5 +1,5 @@
 
-import Index from '../../HomePage/pages/index'
+import pagesindex from '../../HomePage/pages/pagesindex'
 import Mangenr from '../../HomePage/pages/Mangenr'
 import locaupload from '../../HomePage/pages/locaupload'
 import crawler from '../../HomePage/pages/crawler'
@@ -11,7 +11,7 @@ const Mroute = [
         name:'首页',
         paths:'',
         child:false,
-        commpoent:Index,
+        commpoent:pagesindex,
         id:1,
     },
     {

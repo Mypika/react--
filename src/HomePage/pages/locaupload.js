@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Slider, Switch } from 'antd';
-class Page1 extends Component {
+class locaupload extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -22,4 +22,4 @@ class Page1 extends Component {
     }
 }
  
-export default Page1;
+export default locaupload;

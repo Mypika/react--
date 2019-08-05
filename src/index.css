@@ -19,3 +19,10 @@ code {
   margin: 16px 28px 16px 0;
   float: left;
 }
+.Home-ix>.Row-card{
+  display: flex;
+  justify-content: space-around;
+}
+.Home-ix>.Row-card .ant-card-bordered>.ant-card-body{
+  align-items: start;
+}
